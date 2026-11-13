@@ -2,6 +2,8 @@
 
 A front-end app that shows a trades business's upcoming appointments, pulled from the Google Calendar API.
 
+Live Link: https://tbrown320.github.io/simple-api-construction/
+
 ![Example of API Working](API_Screenshot.png)
 
 ## What it does
