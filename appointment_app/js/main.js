@@ -41,6 +41,3 @@ function findAppointments() {
 }
 
 findAppointments()
-
-
-// fetch('https://www.googleapis.com/calendar/v3/calendars/d6337772a2d8bc25ffaffefd407b335c725b05d55ad2a359e6d350598449913f@group.calendar.google.com/events?key=AIzaSyA11quIpobErLTgynv_aAMhnou1-7PFPkE')

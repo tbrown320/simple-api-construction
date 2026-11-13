@@ -1,13 +1,33 @@
-README for Simple API #1
+# Mike's HVAC Solutions — Appointment Checker
 
-Goal: Build a simple front-end app that displays data returned from an api that would be beneficial to someone in the trades (construction, hvac, plumbing, ect)
+A front-end app that shows a trades business's upcoming appointments, pulled from the Google Calendar API.
 
-Idea: Build an appointment checker that allows the user to see their upcoming appointments (dates and times)
+![Example of API Working](API_Screenshot.png)
 
-Sample Data was used in a google calendar to confirm query and API work.
+## What it does
 
-API Used
-https://www.googleapis.com/calendar/v3/calendars/${Cal_ID}/events?key=${google_API_key}
+- Fetches events from a Google Calendar using the Google Calendar API (v3) and lists them on the page.
+- Each appointment shows its date, start time, and end time.
 
-- used to find the calendar an appointments
-- in the future can be edited to have users book appointments on the app for the user to see, and a checkbox system where the owner can mark off appointments that have been completed
+## Tech stack
+
+- HTML, CSS, vanilla JavaScript (ES modules)
+- Google Calendar API — no server, no dependencies
+
+## How to run it
+
+There is no server to start, but the page must be served over HTTP, because `main.js` uses ES module imports — opening the file directly from disk will not load it. Serve the `appointment_app` folder with a static server, for example VS Code Live Server, then open the page it serves.
+
+## Project structure
+
+```
+appointment_app/
+  index.html         - "Mike's HVAC Solutions" — the appointment list
+  js/main.js         - fetches calendar events and renders each appointment
+  js/config.js       - Google API key and calendar ID
+  css/style.css      - page styling
+```
+
+---
+
+Thay Brown — thaybrown22@gmail.com · https://thaythecoder.netlify.app · https://github.com/tbrown320 · https://www.linkedin.com/in/thaybrown
